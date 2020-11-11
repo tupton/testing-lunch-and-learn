@@ -125,16 +125,17 @@ withStatusToasts(Component);
 
 ---
 
-### Older code that's a giant component
+### Older code in a giant component
 
 <Steps>
 
 
 - Don't stress!
-- Can we write the change behavior in a new, smaller component?
+- Can we write the changed behavior in a new, smaller component?
 - This philosophy helps with any large component with children that make testing harder.
   - Compose smaller components and test _them_.
 - Can we update existing tests to exercise some part of the integration of this composition?
+- QA automation, webdriver, cypress can help with testing integration of broad parts of the app.
 
 </Steps>
 
@@ -142,8 +143,10 @@ withStatusToasts(Component);
 <Notes>
 
 
-- No example exercise, but shipment details is a good example
+- No example exercise, but shipment details is a good example.
 - Load board list, too
+- We are working on automation.
+- We don't have to cover absolutely everything with unit (-ish) test.
 
 </Notes>
 
