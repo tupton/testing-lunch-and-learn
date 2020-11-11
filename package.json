@@ -1,0 +1,9 @@
+{
+  "name": "testing-lunch-and-learn",
+  "version": "1.0.0",
+  "description": "A presentation on testing in shipwell/frontend-web",
+  "main": "deck.mdx",
+  "author": "Thomas Upton",
+  "license": "MIT",
+  "private": true
+}
