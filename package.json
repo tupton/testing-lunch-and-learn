@@ -10,6 +10,17 @@
     "start": "mdx-deck deck.mdx"
   },
   "devDependencies": {
-    "mdx-deck": "4.0.0"
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "mdx-deck": "4.0.0",
+    "prettier": "2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md,mdx}": "prettier --write"
   }
 }
