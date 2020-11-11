@@ -90,8 +90,7 @@ export const theme = shipwellTheme;
 - This is iterative
 - Can we migrate from enzyme to testing-library for this component?
 - Can we write _new_ tests using testing-library?
-
-</Steps>
+  </Steps>
 
 
 ---
@@ -108,7 +107,53 @@ withStatusToasts(Component);
 - Migrate to testing-library
 - Assert using screen
 
-</Notes>
+---
+
+import testingTrophy from "./images/testing-trophy-banner.png";
+
+## Testing philosophy
+
+Write tests. Not too many. Mostly integration.
+
+https://kentcdodds.com/blog/write-tests
+
+The more your tests resemble the way your software is used, the more confidence they can give you.
+
+https://testing-library.com/docs/guiding-principles
+
+<img src={testingTrophy} alt="Testing trophy" width="200px" />
+
+---
+
+## Next steps
+
+<Steps>
+
+
+- Pair programming for test-writing
+- Accessibility and roles for components
+  - E.g. titles for buttons, properly-related labels for inputs
+- Custom/bespoke test utils for
+  - redux tests,
+  - mocking setup, and
+  - other boilerplate
+- Making tests part of our review process
+
+</Steps>
+
+
+---
+
+## Resources
+
+- https://kentcdodds.com/blog/write-tests
+- https://kentcdodds.com/blog/unit-vs-integration-vs-e2e-tests
+- https://kentcdodds.com/blog/common-mistakes-with-react-testing-library
+- https://testing-library.com/docs/react-testing-library/api
+- https://testing-library.com/docs/dom-testing-library/api-queries
+- https://chrome.google.com/webstore/detail/testing-playground/hejbmebodbijjdhflfknehhcgaklhano
+
+  </Notes>
 
 
 - Wrote tests after implementation
