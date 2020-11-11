@@ -93,7 +93,7 @@ export const theme = shipwellTheme;
 
 ---
 
-### Older code
+### Older code with little to no tests
 
 <Steps>
 
@@ -119,6 +119,31 @@ withStatusToasts(Component);
 
 - Migrate to testing-library
 - Assert using screen
+
+</Notes>
+
+
+---
+
+### Older code that's a giant component
+
+<Steps>
+
+
+- Don't stress!
+- Can we write the change behavior in a new, smaller component?
+- This philosophy helps with any large component with children that make testing harder.
+  - Compose smaller components and test _them_.
+- Can we update existing tests to exercise some part of the integration of this composition?
+
+</Steps>
+
+
+<Notes>
+
+
+- No example exercise, but shipment details is a good example
+- Load board list, too
 
 </Notes>
 
