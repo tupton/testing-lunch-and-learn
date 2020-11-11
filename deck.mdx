@@ -3,3 +3,73 @@ import shipwellTheme from "./theme";
 export const theme = shipwellTheme;
 
 # Testing in shipwell/frontend-web
+
+---
+
+## What to test
+
+<Steps>
+
+
+- New components!
+  - But what does testing mean? What behavior do I test??
+- Old components!
+  - But what if they don't have tests?
+  - Or if they have old crufty enzyme tests?
+- What about API calls? Or big components with lots of children?
+
+</Steps>
+
+
+<Notes>
+
+
+- This is "unit-ish" testing
+- User-centric testing
+- Don't go down a rabbit hole
+
+</Notes>
+
+
+---
+
+## New components
+
+<Steps>
+
+
+- TDD?
+- If it makes sense!
+
+</Steps>
+
+
+<Notes>
+
+
+- Sometimes TDD doesn't vibe with the way we program
+- Testing after that implementation can be a sort of "proof"
+
+</Notes>
+
+
+---
+
+### Example:
+
+```jsx
+<FuelSurchargeTableCriteriaForm />
+```
+
+<Notes>
+
+
+- Wrote tests after implementation
+- Hard to write react-select _unit_ tests
+  - cypress can help with that!
+- Additional required fields
+- Mode and equipment fetching
+  - Mock, reset
+
+</Notes>
+
